@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFHS-5 to NFHS-6 Change Table — India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;0,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbf8f1;
+    --ink:#1d1b16;
+    --muted:#6b6457;
+    --rule:#d9d1c0;
+    --rule-strong:#b3a98f;
+    --accent:#7a1f2b;          /* deep oxblood for editorial headings */
+    --good-bg:#e3efe4; --good-tx:#1f6b3a; --good-bd:#a9d2af;
+    --bad-bg:#f7e3e1;  --bad-tx:#9a2820;  --bad-bd:#e3b3ac;
+    --neu-bg:#efece3;  --neu-tx:#6b6457;  --neu-bd:#d4cbb6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Source Serif 4",Georgia,serif;
+    line-height:1.5; -webkit-font-smoothing:antialiased;
+    padding:48px 20px 64px;
+  }
+  .sheet{max-width:1040px; margin:0 auto;}
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--accent); font-weight:600; margin:0 0 10px;
+  }
+  h1{
+    font-family:"Spectral",serif; font-weight:800; font-size:34px; line-height:1.12;
+    margin:0 0 6px; letter-spacing:-.01em;
+  }
+  .sub{font-family:"Spectral",serif; font-weight:500; font-size:18px; color:var(--muted); margin:0 0 20px;}
+  .meta{
+    border-top:2px solid var(--ink); border-bottom:1px solid var(--rule);
+    padding:12px 0; font-size:13.5px; color:var(--muted); margin-bottom:22px;
+    display:flex; flex-wrap:wrap; gap:6px 26px;
+  }
+  .meta b{color:var(--ink); font-weight:600;}
+  .legend{
+    display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center;
+    font-size:12.5px; margin:0 0 22px;
+  }
+  .chip{display:inline-flex; align-items:center; gap:7px;}
+  .swatch{width:16px; height:16px; border-radius:3px; border:1px solid;}
+  .sw-good{background:var(--good-bg); border-color:var(--good-bd);}
+  .sw-bad{background:var(--bad-bg); border-color:var(--bad-bd);}
+  .sw-neu{background:var(--neu-bg); border-color:var(--neu-bd);}
+
+  table{width:100%; border-collapse:collapse; font-size:13.5px;}
+  thead th{
+    font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--muted); font-weight:600;
+    text-align:right; padding:10px 12px 8px; border-bottom:2px solid var(--ink);
+    white-space:nowrap;
+  }
+  thead th.ind{text-align:left; width:46%;}
+  .section td{
+    font-family:"Spectral",serif; font-weight:700; font-size:13px; letter-spacing:.04em;
+    text-transform:uppercase; color:var(--accent);
+    padding:18px 12px 6px; border-bottom:1px solid var(--rule-strong);
+  }
+  tbody tr.data{border-bottom:1px solid var(--rule);}
+  tbody tr.data:hover{background:rgba(122,31,43,.035);}
+  td{padding:8px 12px; vertical-align:middle;}
+  td.ind{text-align:left; color:var(--ink);}
+  td.num{
+    text-align:right; font-family:"IBM Plex Mono",monospace; font-size:13px;
+    font-variant-numeric:tabular-nums; color:#3a352c;
+  }
+  td.chg{
+    text-align:right; font-family:"IBM Plex Mono",monospace; font-weight:600;
+    font-size:13px; white-space:nowrap; border-radius:4px;
+  }
+  .chg.good{background:var(--good-bg); color:var(--good-tx);}
+  .chg.bad{background:var(--bad-bg); color:var(--bad-tx);}
+  .chg.neu{background:var(--neu-bg); color:var(--neu-tx);}
+  .fn-mark{font-size:10px; vertical-align:super; color:var(--accent); font-family:"IBM Plex Mono",monospace; margin-left:2px;}
+  .arrow{font-family:sans-serif;}
+  .footnotes{margin-top:26px; padding-top:14px; border-top:1px solid var(--rule); font-size:11.5px; color:var(--muted); line-height:1.65;}
+  .footnotes p{margin:0 0 5px;}
+  .footnotes b{color:var(--ink);}
+  @media (max-width:640px){
+    h1{font-size:26px;} thead th.ind{width:auto;} td.ind{font-size:12.5px;}
+    body{padding:28px 12px;}
+  }
+  @media print{
+    body{background:#fff; padding:0;}
+    tbody tr.data:hover{background:none;}
+    .section td{break-after:avoid;}
+    tr{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <p class="eyebrow">National Family Health Survey · India</p>
+  <h1>From NFHS&#8209;5 to NFHS&#8209;6: What Changed</h1>
+  <p class="sub">Key-indicator comparison, all-India totals (NFHS&#8209;5, 2019–21 vs NFHS&#8209;6, 2023–24)</p>
+
+  <div class="meta">
+    <span><b>NFHS&#8209;5:</b> 636,699 households · 724,115 women · 101,839 men</span>
+    <span><b>NFHS&#8209;6:</b> 679,238 households · 716,397 women · 100,977 men (excl. Manipur)</span>
+    <span><b>Change (Δ):</b> percentage points unless stated</span>
+    <span style="color:var(--accent);"><b>NFHS&#8209;6 results are provisional.</b></span>
+  </div>
+
+  <div class="legend">
+    <span class="chip"><span class="swatch sw-good"></span>Favourable shift</span>
+    <span class="chip"><span class="swatch sw-bad"></span>Unfavourable shift</span>
+    <span class="chip"><span class="swatch sw-neu"></span>Neutral / negligible / contextual</span>
+    <span style="color:var(--muted);">&nbsp;·&nbsp; ▲ increase &nbsp; ▼ decrease</span>
+  </div>
+
+  <table id="tbl">
+    <thead>
+      <tr>
+        <th class="ind">Indicator</th>
+        <th>NFHS&#8209;5</th>
+        <th>NFHS&#8209;6</th>
+        <th>Δ&nbsp;(pp)</th>
+      </tr>
+    </thead>
+    <tbody id="body"></tbody>
+  </table>
+
+  <div class="footnotes" id="fn">
+    <p><b>Sources:</b> IIPS, NFHS&#8209;5 India Fact Sheet (2019–21) and NFHS&#8209;6 India Fact Sheet (2023–24), Ministry of Health &amp; Family Welfare, Government of India. NFHS&#8209;5 column taken from the NFHS&#8209;5 fact sheet; NFHS&#8209;6 column from the NFHS&#8209;6 fact sheet.</p>
+    <p><b>Colour logic:</b> shifts are coded by their public-health direction, not merely by sign — e.g. a rise in caesarean rate or in overweight/obesity is shaded unfavourable, while a fall in stunting or anaemia is favourable. Demographic or care-mix shifts with no inherent "good" direction (fertility at replacement, public–private facility share, sterilization mix) are shown as neutral.</p>
+    <p><b>a</b> Indicator newly framed in NFHS&#8209;6; the NFHS&#8209;5 value is the comparison figure reprinted in the NFHS&#8209;6 fact sheet (basis may differ from the NFHS&#8209;5 fact sheet).</p>
+    <p><b>b</b> Men's internet use: NFHS&#8209;6 reprints the NFHS&#8209;5 figure as 51.2%; the NFHS&#8209;5 fact sheet reports 57.1% (used here).</p>
+    <p><b>c</b> Second-dose MCV (24–35 mo): NFHS&#8209;5 fact sheet reports 31.9%; NFHS&#8209;6 reprints 58.6% as the NFHS&#8209;5 value — a sizeable inconsistency. The change shown uses the NFHS&#8209;5 fact-sheet figure and should be read with caution.</p>
+    <p><b>d</b> Rotavirus rollout was incomplete/phased at NFHS&#8209;5; the two rounds are not strictly comparable (per IIPS note).</p>
+    <p><b>e</b> Pre-school: NFHS&#8209;6 uses ages 2–4 yrs; the NFHS&#8209;5 fact-sheet figure (13.6%) referred to 5-year-olds, so this is not a like-for-like comparison.</p>
+  </div>
+</div>
+
+<script>
+const rows = [
+  ["§","Population & Household Profile"],
+  ["Population below age 15 years",26.5,25.5,"neutral"],
+  ["Households with electricity",96.8,98.3,"up"],
+  ["Improved drinking-water source",95.9,96.5,"up"],
+  ["Households using iodized salt",94.3,94.2,"up"],
+  ["Any member covered by health insurance/financing",41.0,60.2,"up"],
+  ["Household with a bank / post-office account",95.7,98.2,"up","a"],
+  ["Female population age 6+ who ever attended school",71.8,73.7,"up"],
+  ["Households with a female member owning house/land",14.0,18.8,"up","a"],
+  ["Children attending pre-school",40.1,47.0,"up","e"],
+
+  ["§","Characteristics of Adults (15–49 yrs)"],
+  ["Women with 10+ years of schooling",41.0,46.4,"up"],
+  ["Men with 10+ years of schooling",50.2,54.6,"up"],
+  ["Women who have ever used the internet",33.3,64.3,"up"],
+  ["Men who have ever used the internet",57.1,80.5,"up","b"],
+
+  ["§","Marriage & Fertility"],
+  ["Women 20–24 married before age 18",23.3,20.1,"down"],
+  ["Men 25–29 married before age 21",17.7,15.9,"down"],
+  ["Total fertility rate (children per woman)",2.0,2.0,"neutral"],
+  ["Women 15–19 already mothers or pregnant",6.8,6.7,"down"],
+
+  ["§","Family Planning (currently married, 15–49 yrs)"],
+  ["Any method",66.7,69.1,"up"],
+  ["Any modern method",56.5,52.7,"up"],
+  ["Any traditional method",10.3,16.4,"down","a"],
+  ["Female sterilization",37.9,36.5,"neutral"],
+  ["Male sterilization",0.3,0.5,"neutral"],
+  ["Total unmet need",9.4,8.5,"down"],
+  ["Unmet need for spacing",4.0,4.5,"down"],
+
+  ["§","Antenatal Care (last birth, prior 5 yrs)"],
+  ["ANC check-up in first trimester",70.0,76.2,"up"],
+  ["Any antenatal care visits",92.6,95.9,"up","a"],
+  ["At least 4 ANC visits",58.1,65.2,"up"],
+  ["Last birth protected against neonatal tetanus",92.0,93.8,"up"],
+  ["Consumed IFA for 100+ days in pregnancy",44.1,54.9,"up"],
+  ["Consumed IFA for 180+ days in pregnancy",26.0,37.8,"up"],
+  ["Received Mother & Child Protection card",95.9,95.6,"up"],
+
+  ["§","Delivery & Postnatal Care"],
+  ["Mother received PNC within 2 days",78.0,82.8,"up"],
+  ["Home-born children taken to facility within 24 h",4.2,6.4,"up"],
+  ["Child received PNC within 2 days",79.1,85.3,"up"],
+  ["Institutional births",88.6,90.6,"up"],
+  ["Institutional births in a public facility",61.9,58.6,"neutral"],
+  ["Births attended by skilled health personnel",89.4,91.3,"up"],
+  ["Births delivered by caesarean section",21.5,27.2,"down"],
+  ["Caesarean section in private facilities",47.4,54.1,"down"],
+  ["Caesarean section in public facilities",14.3,16.9,"down"],
+
+  ["§","Child Vaccination & Vitamin A (12–23 mo)"],
+  ["Fully vaccinated (card or recall)",76.4,82.6,"up"],
+  ["Fully vaccinated (card only)",83.8,87.1,"up"],
+  ["BCG",95.2,95.0,"up"],
+  ["3 doses of polio",80.5,85.0,"up"],
+  ["3 doses of penta / DPT",86.7,89.2,"up"],
+  ["First dose of measles-containing vaccine (MCV1)",87.9,91.7,"up"],
+  ["Second dose of MCV (24–35 mo)",31.9,71.8,"up","c"],
+  ["3 doses of rotavirus vaccine",36.4,85.4,"up","d"],
+  ["Vitamin A dose in last 6 months (9–35 mo)",71.2,74.6,"up"],
+
+  ["§","Treatment of Childhood Diseases (under 5 yrs)"],
+  ["Diarrhoea prevalence (prior 2 weeks)",7.3,7.9,"down"],
+  ["ARI symptoms (prior 2 weeks)",2.8,1.9,"down"],
+  ["Fever / ARI taken to a facility or provider",69.0,68.8,"up"],
+
+  ["§","Child Feeding & Nutritional Status (under 5 yrs)"],
+  ["Breastfed within one hour of birth",41.8,50.1,"up"],
+  ["Exclusively breastfed (under 6 mo)",63.7,55.8,"up"],
+  ["6–8 mo receiving solid/semi-solid food + breastmilk",45.9,59.5,"up"],
+  ["6–23 mo receiving an adequate diet",11.0,15.3,"up"],
+  ["Stunted (height-for-age)",35.5,29.3,"down"],
+  ["Wasted (weight-for-height)",19.3,19.0,"down"],
+  ["Severely wasted",7.7,5.2,"down"],
+  ["Underweight (weight-for-age)",32.1,31.8,"down"],
+  ["Overweight (weight-for-height)",3.4,1.3,"down"],
+
+  ["§","Nutritional Status of Adults (15–49 yrs)"],
+  ["Women with BMI below normal (<18.5)",18.7,19.7,"down"],
+  ["Men with BMI below normal (<18.5)",16.2,19.7,"down"],
+  ["Women overweight or obese (BMI ≥25.0)",24.0,30.7,"down"],
+  ["Men overweight or obese (BMI ≥25.0)",22.9,27.3,"down"],
+
+  ["§","Blood Sugar (age 15+)"],
+  ["Women — high/very high or on medication",13.5,17.8,"down"],
+  ["Men — high/very high or on medication",15.6,20.9,"down"],
+
+  ["§","Hypertension (age 15+)"],
+  ["Women — elevated BP or on medication",21.3,19.4,"down"],
+  ["Men — elevated BP or on medication",24.0,22.1,"down"],
+
+  ["§","Women's Empowerment (15–49 yrs)"],
+  ["Married women in three household decisions",88.7,89.0,"up"],
+  ["Worked in last 12 months & paid in cash",25.4,30.8,"up"],
+  ["Has a bank/savings account she uses",78.6,89.0,"up"],
+  ["Has a mobile phone she uses",54.0,63.6,"up"],
+  ["15–24 yrs using hygienic menstrual protection",77.3,79.2,"up"],
+
+  ["§","Gender-Based Violence (18–49 yrs)"],
+  ["Ever-married women experiencing spousal violence",29.3,22.3,"down"],
+  ["Physical violence during any pregnancy",3.1,2.7,"down"],
+  ["Sexual violence by age 18 (women 18–29)",1.5,0.7,"down"],
+
+  ["§","Tobacco & Alcohol (age 15+)"],
+  ["Women using any kind of tobacco",8.9,8.4,"down"],
+  ["Men using any kind of tobacco",38.0,36.3,"down"],
+  ["Women who consume alcohol",1.3,1.1,"down"],
+  ["Men who consume alcohol",18.8,18.9,"down"],
+];
+
+const body = document.getElementById("body");
+function classify(n5,n6,benefit){
+  const d = +(n6-n5).toFixed(1);
+  if(benefit==="neutral" || Math.abs(d)<0.1) return {d, cls:"neu", arrow: d>0?"▲":(d<0?"▼":"—")};
+  const actualUp = d>0;
+  const fav = (benefit==="up" && actualUp) || (benefit==="down" && !actualUp);
+  return {d, cls: fav?"good":"bad", arrow: actualUp?"▲":"▼"};
+}
+rows.forEach(r=>{
+  const tr=document.createElement("tr");
+  if(r[0]==="§"){
+    tr.className="section";
+    tr.innerHTML=`<td colspan="4">${r[1]}</td>`;
+  } else {
+    const [label,n5,n6,benefit,fnote]=r;
+    const {d,cls,arrow}=classify(n5,n6,benefit);
+    const sign = d>0?"+":"";
+    const fn = fnote?`<span class="fn-mark">${fnote}</span>`:"";
+    tr.className="data";
+    tr.innerHTML=`<td class="ind">${label}${fn}</td>
+      <td class="num">${n5.toFixed(1)}</td>
+      <td class="num">${n6.toFixed(1)}</td>
+      <td class="chg ${cls}"><span class="arrow">${arrow}</span> ${sign}${d.toFixed(1)}</td>`;
+  }
+  body.appendChild(tr);
+});
+</script>
+</body>
+</html>
